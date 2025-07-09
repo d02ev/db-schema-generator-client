@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Connect from './pages/Connect'
+import Diagram from './pages/Diagram'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/diagram" element={<Diagram />} />
         </Routes>
         <Footer />
       </div>

@@ -30,7 +30,7 @@ export async function testConnection(dbUrl) {
 
 export async function getSchema(dbUrl) {
   try {
-    const res = await api.get('/get-schema', { params: { dbUrl } })
+    const res = await api.get('/get-schemas', { params: { dbUrl } })
     return { success: true, data: res.data }
   } catch (error) {
     return { success: false, message: getFriendlyErrorMessage(error) }
